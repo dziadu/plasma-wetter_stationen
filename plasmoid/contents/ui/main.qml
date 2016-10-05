@@ -24,7 +24,7 @@ Item {
         running: true
         repeat: true
         triggeredOnStart: true
-        interval: plasmoid.configuration.updateInterval * 100
+        interval: plasmoid.configuration.updateInterval * 1000
         onTriggered: callback()
     }
 
@@ -32,8 +32,8 @@ Item {
         id: fullRoot
         Layout.minimumWidth: img.width
         Layout.minimumHeight: img.height
-        Layout.preferredWidth: Layout.minimumWidth * 1.5
-        Layout.preferredHeight: Layout.minimumHeight * 1.5
+        Layout.preferredWidth: Layout.minimumWidth
+        Layout.preferredHeight: Layout.minimumHeight
 
         Image {
             id: img
